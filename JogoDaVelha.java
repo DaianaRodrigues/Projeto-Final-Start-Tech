@@ -22,6 +22,7 @@ public class JogoDaVelha {
                 System.out.printf("%d | %s | %s | %s \n", i + 1, tabuleiro[i][0], tabuleiro[i][1], tabuleiro[i][2]);
             }
             String entrada = ler.nextLine().trim();
+            entrada = entrada.toLowerCase();
             int horizontal;
             horizontal = switch(entrada.charAt(0)){
                 case 'a' -> 0;
